@@ -1,1 +1,1 @@
-# collabbizz-frontend
+# CollabBizz

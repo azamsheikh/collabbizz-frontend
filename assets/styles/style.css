@@ -1,0 +1,1495 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: Georgia;
+  line-height: 1.6;
+  display: none;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+
+
+
+
+.mainBody {
+  text-align: center;
+  width: 60%;
+  z-index: -1;
+
+}
+
+#mainscrollable {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  margin: auto;
+  width: 41%;
+  height: auto;
+
+}
+
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  z-index: -1;
+}
+
+/* Header Section */
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+
+
+  z-index: 1;
+
+}
+
+.logo {
+  width: auto;
+  height: auto;
+  background-color: #7357f3;
+  padding-bottom: 10px;
+}
+
+.logoImage {
+  margin-top: 10px;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  padding: 5px;
+}
+
+.userHeader {
+  float: right;
+  width: 40%;
+  height: 100px;
+  text-align: center;
+
+}
+
+.userHeader img {
+  width: 50px;
+  height: 50px;
+  margin-top: 25px;
+
+}
+
+.usernewPostsection {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  overflow-y: hidden;
+  margin-bottom: 20px;
+
+}
+
+.usernewpostsectioninside {
+  margin-top: 20px;
+  width: 100%;
+  height: 100px;
+  background: rgba(161, 141, 246, 0.4);
+  border-radius: 0px;
+  border-color: #e0dcf0;
+
+}
+
+.usernewpostsectioncreativeoptions {
+  float: left;
+  width: 35%;
+  height: 100%;
+  position: relative;
+  opacity: 1;
+}
+
+.usernewpostsectionuserimage {
+  margin: auto;
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.usernewpostsectioncreateoptions {
+  float: right;
+  width: 35%;
+  height: 100%;
+}
+
+
+.usernewpostsectionuserimage img {
+  height: 45px;
+  width: 45px;
+  border-radius: 100px;
+  margin: 10px;
+}
+
+.rightSidebar {
+  height: 100%;
+  /* 100% Full-height */
+  margin-top: 100px;
+  position: fixed;
+  /* Stay in place */
+  z-index: -3;
+  /* Stay on top */
+  top: 0;
+  width: 30%;
+  right: 0;
+  float: right;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+
+/* The sidebar menu */
+.leftSidebar {
+  height: 100%;
+  /* 100% Full-height */
+  margin-top: 100px;
+  width: 30%;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: -3;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.messageSidebar {
+  height: 100%;
+  /* 100% Full-height */
+  margin-top: 100px;
+  position: fixed;
+  /* Stay in place */
+  z-index: -3;
+  /* Stay on top */
+  top: 0;
+  width: 0%;
+  right: 0;
+  float: right;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.singlemessageSidebar {
+  height: 100%;
+  /* 100% Full-height */
+  margin-top: 100px;
+  position: fixed;
+  /* Stay in place */
+  z-index: -3;
+  /* Stay on top */
+  top: 0;
+  width: 30%;
+  right: 0;
+  float: right;
+  background-color: white;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidebar */
+
+}
+
+/*Buttons */
+.usersectioncreatebutton {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 45%;
+
+
+}
+
+.usersectioncreatebutton:hover,
+.usersectioncreatebutton:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.usersectioncreatebutton:hover {
+  transform: translateY(-1px);
+}
+
+.usersectioncreatebutton:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+
+
+/*Buttons ends*/
+
+
+/*Post Box*/
+.PostBoxArea {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.PostBoxAreainside {
+
+  width: 100%;
+  min-height: auto;
+  border-bottom: 2px solid;
+  background: rgba(161, 141, 246, 0.4);
+  border-color: #e0dcf0;
+  border-radius: 5px;
+
+
+}
+
+.PostBoxAreauserimage {
+  margin: auto;
+  float: left;
+  width: auto;
+  height: auto;
+}
+
+
+.PostBoxAreauserimage img {
+  height: 30px;
+  width: auto;
+  border-radius: 100px;
+  margin: 10px;
+  margin-right: 5px;
+}
+
+.userDetailsofpost {
+  width: 100%;
+  height: 50px;
+}
+
+.PostBoxAreausername {
+  text-align: left;
+  float: left;
+}
+
+.PostBoxAreausername p {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  margin: 10px;
+  margin-left: 0px;
+  font-weight: 500;
+  color: #3905fc;
+}
+
+.PostBoxAreamainpost {
+  height: auto;
+  /*      */
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+
+.mainPost {
+  padding-bottom: 10px;
+
+}
+
+#post {
+  height: auto;
+  /*      */
+}
+
+.mainPostText {
+  height: 100%;
+}
+
+.mainPostText p {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+
+.reactionSection {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 3px solid #c9bcf6;
+  text-align: center;
+}
+
+.reactionSection img {
+  height: 25px;
+  width: 25px;
+}
+
+reactIcon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+.userpostpanelquickoptions {
+  width: 100%;
+  height: auto;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: rgba(161, 141, 246, 0.4)
+}
+
+.userpostpanelquickoptions img {
+  height: 25px;
+  width: 25px;
+}
+
+userquickIcon {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+.sliderbuttons {
+  height: 43px;
+  width: "100%";
+  margin-top: 60%;
+}
+
+.sliderbuttonsright {
+  float: right;
+  width: 48%;
+  height: 43px;
+  text-align: right;
+
+}
+
+.sliderbuttonsleft {
+  float: left;
+  width: 48%;
+  height: 43px;
+  text-align: left;
+
+}
+
+
+
+#leftsliderRightbutton {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+#leftsliderRightbuttonimg {
+  margin-top: 60%;
+  height: 40px;
+  width: 40px;
+}
+
+
+#rightsliderLeftbutton {
+  height: 30px;
+  width: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+#rightsliderLeftbuttonimg {
+  margin-top: 60%;
+  height: 50px;
+  width: 40px;
+}
+
+
+#leftsliderclosebutton {
+  border: none;
+  background-color: transparent;
+  float: right;
+  display: none;
+}
+
+#leftsliderclosebuttonimg {
+  height: 40px;
+  width: 40px;
+}
+
+
+#rightsliderclosebutton {
+  border: none;
+  background-color: transparent;
+  float: right;
+  display: none;
+}
+
+#rightsliderclosebuttonimg {
+  height: 40px;
+  width: 40px;
+}
+
+#messagesliderclosebutton {
+  border: none;
+  background-color: transparent;
+  float: right;
+  display: block;
+}
+
+#singlemessagesliderclosebutton {
+  border: none;
+  background-color: transparent;
+  float: right;
+  display: block;
+}
+
+
+#messagesliderclosebuttonimg {
+  height: 40px;
+  width: 40px;
+}
+
+#singlemessagesliderclosebuttonimg {
+  height: 40px;
+  width: 40px;
+}
+
+
+
+.PostBoxAreauserDateandTime {
+  text-align: right;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+
+.PostBoxAreauserDateandTime p {
+  color: white;
+}
+
+.userHeaderlogoutSection {
+  background-color: whitesmoke;
+  height: 400px;
+  width: 300px;
+  float: right;
+  padding: 10px;
+  display: none;
+
+}
+
+.logoutSection {
+  height: 100%;
+  width: 100%;
+
+}
+
+
+.userHeadernotificationSection {
+  background-color: whitesmoke;
+  height: 400px;
+  width: 300px;
+  float: right;
+  padding: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
+  display: none;
+  box-shadow: 3px 3px rgba(161, 141, 246, 0.4);
+  z-index: 2;
+  position: absolute;
+
+}
+
+.notificationSection {
+  height: 90%;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.userHeadermessagesSection {
+  background-color: whitesmoke;
+  height: 400px;
+  width: 300px;
+  float: right;
+  padding: 10px;
+  display: none;
+  box-shadow: 3px 3px rgba(161, 141, 246, 0.4);
+  z-index: 3;
+  position: absolute;
+}
+
+.messageSection {
+  height: 90%;
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+
+}
+
+#userpostimagecontainerbutton {
+  border: none;
+  background-color: transparent;
+  width: 35px;
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+
+#headerNotificationButton {
+  border: none;
+  background-color: transparent;
+  height: 45px;
+  width: auto;
+  margin-right: 20px;
+
+}
+
+.logoutdivbutton {
+
+  height: 40px;
+  margin: auto;
+  width: 100%;
+  margin-top: 10px;
+  background-color: grey;
+  border: none;
+
+}
+
+.logoutdivbutton:hover {
+  background-color: black;
+}
+
+.logoutdiv p {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.userHeadernotifications {
+  height: 100%;
+  width: 100%;
+}
+
+#headerMessageButton {
+  height: 45px;
+  width: auto;
+  margin-right: 20px;
+}
+
+#headerBAPSectionButton {
+  height: 35px;
+  width: 35px;
+}
+
+
+.leftSideBarMainContent {
+  margin-top: 80px;
+}
+
+.rightideBarMainContent {
+  margin-top: 40px;
+}
+
+.rightsidebarServicesHeader {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+}
+
+.leftsidebarServicesHeader {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+}
+
+.messagesidebarServicesHeader {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+}
+
+.singlemessagesidebarServicesHeader {
+  width: 60%;
+  height: auto;
+  padding: 10px;
+}
+
+.leftsidebarServicesHeader p {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3905fc;
+  border-bottom: 2px solid #888888;
+}
+
+.rightsidebarServicesHeader p {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3905fc;
+  border-bottom: 2px solid #888888;
+}
+
+.messagesidebarServicesHeader p {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3905fc;
+  border-bottom: 2px solid #888888;
+}
+
+.singlemessagesidebarServicesHeader p {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #3905fc;
+  border-bottom: 2px solid #888888;
+}
+
+.leftsidebarservicesArea {
+  height: 1000px;
+  width: 100%
+}
+
+.rightsidebarbapArea {
+  height: 1000px;
+  width: 100%
+}
+
+.messagesidebarmessageArea {
+  height: 1000px;
+  width: 100%
+}
+
+.singlemessagesidebarmessageArea {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 80%;
+}
+
+
+
+.leftsidebarservicesAreaService {
+  height: auto;
+  margin-bottom: 100px;
+}
+
+
+.serviceDetails {
+  height: 60px;
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 20px;
+}
+
+.serviceDetailsImage {
+  height: auto;
+  width: auto;
+  float: left;
+}
+
+.serviceDetailsImage img {
+  height: 50px;
+  width: 200px;
+
+}
+
+.serviceDetailsStatus {
+  height: auto;
+  width: 40%;
+  float: left;
+}
+
+
+
+.activeNotActiveDiv {
+  height: auto;
+  margin-left: 15px;
+  width: 100%;
+  background-color: blue;
+
+}
+
+.runningNotRunningDiv {
+
+  height: auto;
+  margin-left: 15px;
+  width: 100%;
+  float: left;
+}
+
+.servicesatusImage {
+  height: 10px;
+  width: 10px;
+  margin-top: 2px;
+  float: left;
+}
+
+.servicesatusImage img {
+
+  float: left;
+}
+
+activeNotActiveText {
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+runningNotRunningText {
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+
+.serviceDetailsButtons {
+  width: 40%;
+  height: auto;
+  float: right;
+}
+
+.statusimages {
+  width: auto;
+  height: auto;
+  float: left;
+  margin-left: 10px;
+  padding-top: 4px;
+}
+
+.statusText {
+  float: left;
+}
+
+
+.serviceSettingsButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+}
+
+.serviceSettingsButtonButton {
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: 10px;
+  margin-right: 5px;
+
+}
+
+.serviceSettingsButton img {
+  height: 20px;
+  width: 20px;
+}
+
+servicesettingbuttonstext {
+  font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.bapsectionheaderbutton {
+  display: none;
+}
+
+
+
+.leftsidebarclosebuttonarea {
+  position: fixed;
+  width: inherit;
+  background-color: white;
+
+}
+
+
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #6d44fa;
+  border-radius: 80%;
+  width: 100px;
+  height: 100px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.offsetPostloader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #6d44fa;
+  border-radius: 80%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.centered-loading-div {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+}
+
+
+.offSetPosts-loading-div {
+
+  display: none;
+}
+
+.sessionexpiredbox {
+  border-radius: 25px;
+  background-color: #ddd4fa;
+  height: 250px;
+  width: 400px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+
+}
+
+.sessionexpiredboxContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+sessionExpiredMainText {
+  font-size: 20px;
+  color: #708090;
+}
+
+sessionExpiredMmessageText {
+  font-size: 15px;
+  color: #708090;
+}
+
+.sessionExpiredLoginButton {
+  background-color: #5524fa;
+  /* Green */
+  border-radius: 20px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.postTextMain {
+  margin-left: 10px;
+}
+
+
+.postReactionbutton {
+  background: none;
+  border: none;
+}
+
+
+reactText {
+  font-weight: 500;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.mainpostArea {
+  animation: fade-in 2s;
+  opacity: 1;
+}
+
+
+
+.postReactionbutton:hover {
+  transform: translateY(-2px);
+}
+
+.postReactionbutton:active {
+
+  transform: translateY(0);
+}
+
+.messageBubbleHeaderText {
+  color: #7a7567;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.messageBubblemessage {
+  width: 100%;
+  height: 20%;
+  transition: transform .2s;
+}
+
+.messageBubblemessage:hover {
+  -ms-transform: scale(1.05);
+  /* IE 9 */
+  -webkit-transform: scale(1.05);
+  /* Safari 3-8 */
+}
+
+
+
+.messageBubblesenderImage {
+  float: left;
+}
+
+.messageBubblesenderImage img {
+  margin: auto;
+  border-radius: 50px;
+  height: 50px;
+  width: auto;
+}
+
+.messageBubblesenderName {
+  float: left;
+  margin-left: 5px;
+  width: 60%;
+}
+
+.messageBubblesenderName senderName {
+  color: blue;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.messageBubblemessageText {
+  float: left;
+}
+
+.messageBubblemessageText messageText {
+  color: black;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+
+.messageBubbleAllmessagesText {
+  color: blue;
+  font-size: 10px;
+}
+
+
+.userHeadernotificationSection {
+  margin-left: 120px;
+}
+
+.userHeadernotificationSection a {
+  text-decoration: none;
+}
+
+.userHeadernotificationSection a:hover {
+  text-decoration: none;
+}
+
+.notificationBubbleHeaderText {
+  color: #7a7567;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+
+}
+
+
+.notificationBubblemessage {
+  width: 100%;
+  height: 20%;
+  margin-bottom: 10px;
+}
+
+
+
+.notificationBubblesenderImage {
+  float: right;
+}
+
+.notificationBubblesenderImage img {
+  margin: auto;
+  height: 40px;
+  width: auto;
+
+}
+
+.notificationBubblemessageText {
+  color: #5c5b56;
+  font-size: 13px;
+  transition: transform .2s;
+  text-align: justify;
+  text-justify: none;
+  margin-left: 15px;
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.notificationText {
+  padding: 10px;
+  width: 100%;
+
+}
+
+
+
+
+
+.notificationBubblemessageText:hover {
+  -ms-transform: scale(1.05);
+  /* IE 9 */
+  -webkit-transform: scale(1.05);
+  /* Safari 3-8 */
+  transform: scale(1.05);
+}
+
+.notificationBubbleAllmessagesText {
+  color: blue;
+  font-size: 10px;
+}
+
+
+
+/*////////////////////////////////////////////////Phone Section Starts///////////////////////////////////////////////////////////*/
+
+
+@media (max-width: 575.98px) {
+  #leftsidebaropenButton {
+    color: red;
+    position: fixed;
+    margin-top: 55%;
+  }
+
+
+  #mainscrollable {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+
+  .usersectioncreatepostbutton {
+    font-size: 8px;
+  }
+
+  .usernewpostsectionuserimage img {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+  }
+
+  .usersectioncreatepostbutton {
+    font-size: 9px;
+  }
+
+  .rightSidebar {
+    width: 0%;
+  }
+
+  .leftSidebar {
+    width: 0%;
+  }
+
+  .messageSidebar {
+    width: 0%;
+  }
+
+  .singlemessageSidebar {
+    width: 30%;
+  }
+
+  .PostBoxAreainside {
+    height: auto;
+  }
+
+  .mainPostText p {
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+
+  }
+
+
+  .reactionSection {
+    margin-top: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  reactIcon {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .reactionSection img {
+    height: 20px;
+    width: 20px;
+  }
+
+
+  #post {
+    height: auto;
+  }
+
+
+
+
+  #leftsliderRightbutton {
+    border: none;
+    background-color: transparent;
+    display: block;
+  }
+
+  #leftsliderRightbuttonimg {
+    height: 40px;
+    width: 40px;
+  }
+
+
+  #rightsliderLeftbutton {
+    border: none;
+    background-color: transparent;
+    margin: auto;
+
+  }
+
+  #rightsliderLeftbuttonimg {
+    height: 40px;
+    width: 40px;
+  }
+
+
+  #leftsliderclosebutton {
+    border: none;
+    background-color: transparent;
+    float: right;
+    display: block;
+    margin-right: 10px;
+  }
+
+  #leftsliderclosebuttonimg {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+
+
+  .sliderbuttons {
+    margin-top: 60%;
+
+  }
+
+  .sliderbuttonsright {
+    width: 48%;
+
+    height: 60px;
+    padding-right: 20px;
+  }
+
+  .sliderbuttonsleft {
+    float: left;
+    width: 48%;
+    height: 60px;
+
+
+  }
+
+  #rightsliderclosebutton {
+    border: none;
+    background-color: transparent;
+    float: right;
+    display: block;
+  }
+
+  #rightsliderclosebuttonimg {
+    height: 40px;
+    width: 40px;
+  }
+
+
+
+  .userHeaderlogoutSection {
+    height: 250px;
+    width: 160px;
+    float: right;
+    display: none;
+
+  }
+
+  .logoutdivbutton {
+
+    height: 40px;
+    margin: auto;
+    width: 100%;
+    margin-top: 10px;
+    background-color: grey;
+
+  }
+
+  .logoutdivbutton:hover {
+    background-color: black;
+  }
+
+  .logoutdiv p {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+
+  .userHeader {
+    width: 50%;
+  }
+
+  #headerMessageButton {
+    height: 35px;
+    width: 35px;
+  }
+
+  #headerNotificationButton {
+    height: 35px;
+    width: 35px;
+  }
+
+  .leftsidebarServicesHeader p {
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .serviceDetailsImage {
+    float: left;
+  }
+
+  .serviceDetailsImage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: 120px;
+
+  }
+
+
+  .serviceDetailsStatus {
+    height: auto;
+    text-align: center;
+    width: 40%;
+    margin: auto;
+
+  }
+
+  .serviceSettingsButton {
+    padding-top: 15px;
+  }
+
+  activeNotActiveText {
+    color: black;
+    font-size: 10px;
+    margin-left: 2px;
+  }
+
+  runningNotRunningText {
+    color: black;
+    font-size: 10px;
+    margin-left: 2px;
+  }
+
+  .serviceSettingsButtonButton {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+    margin-left: 2px;
+    margin-right: 5px;
+  }
+
+  servicesettingbuttonstext {
+    font-weight: 400;
+    font-size: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+
+
+
+  .servicesatusImage {
+    margin-top: -2px;
+  }
+
+  .bapsectionheaderbutton {
+    display: inline;
+  }
+
+
+
+
+  .userHeadermessagesSection {
+    width: 250px;
+    height: 350px;
+  }
+
+  .messageBubblesenderImage img {
+    height: 50px !important;
+    width: 50px !important;
+  }
+
+  .messageBubblesenderName senderName {
+    font-size: 10px;
+  }
+
+
+  .messageBubblemessageText messageText {
+    font-size: 10px;
+  }
+
+
+
+  .userHeadernotificationSection {
+    width: 250px;
+    height: 350px;
+    margin-left: 10px;
+
+  }
+
+
+  .notificationBubblesenderImage img {
+    height: 40px !important;
+    width: auto !important;
+
+  }
+
+  .notificationBubblemessageText {
+    font-size: 10px;
+  }
+
+  .notificationText {
+    padding: 10px;
+    width: 100%;
+
+  }
+
+
+}

@@ -1,0 +1,99 @@
+.messagesidebarmessageAreaMESSAGE {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+
+#messageBarMessageName {
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    margin-left: 120px;
+}
+
+
+#messageBarMessageDetails {
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    margin-left: 120px;
+}
+
+/* Basic styling for the message sidebar area */
+.messagesidebarbapArea {
+    width: 300px;
+    /* Adjust the width as needed */
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Style for each individual message */
+.message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+/* Style for the user picture */
+.message-user-picture {
+    width: 50px;
+    /* Adjust the picture size as needed */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Style for the user name */
+.message-user-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Style for the user message */
+.message-user-message {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*/////////////phone Section/////////////////*/
+
+
+@media (max-width: 575.98px) {
+
+    .messageSidebar {
+        height: 100%;
+    }
+
+    .eachMessageAreaImage {
+        float: left;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .eachMessageAreaImage img {
+
+        width: auto;
+        height: 50%;
+        margin: auto;
+
+    }
+
+
+
+    #messagetBarMessageName {
+        font-size: 15px;
+        font-weight: 700;
+        width: 100%;
+        margin-left: 50px;
+    }
+
+    #messageBarMessageDetails {
+        font-size: 12px;
+        font-weight: 500;
+        width: 100%;
+        margin-left: 50px;
+    }
+}

@@ -1,0 +1,36 @@
+.servicesleftpanelbottom {
+    height: 20px;
+    width: 30%;
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+}
+
+
+
+
+/*/////////////phone Section/////////////////*/
+
+
+@media (max-width: 575.98px) {
+
+
+
+    .leftsidebarservicesArea {
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        text-align: center;
+        padding-bottom: 100px;
+
+    }
+
+    .leftsidebarclosebuttonarea {
+        visibility: hidden;
+        position: fixed;
+        width: inherit;
+    }
+
+
+}

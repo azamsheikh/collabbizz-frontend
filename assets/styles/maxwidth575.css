@@ -1,0 +1,32 @@
+@media (max-width: 575.98px) {
+
+    .logo img {
+        width: 100px;
+        height: 80px;
+    }
+
+    .logoImage {
+        content: url("../img/logos/websitelogo2.png");
+    }
+
+    .logo img {
+        height: 60px;
+        width: 120px;
+    }
+
+    .userHeader {
+        width: 60%;
+    }
+
+    #userpostimagecontainerbutton {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
+
+    #userpostimage {
+        height: 40px;
+        width: 40px
+    }
+
+}

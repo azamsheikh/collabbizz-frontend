@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket Client</title>
+</head>
+
+<body>
+    <h1>WebSocket Client</h1>
+    <div id="messages"></div>
+
+    <script>
+        const ws = new WebSocket('ws://localhost:4000');
+
+        ws.onopen = function (event) {
+            console.log('WebSocket connection opened.');
+        };
+
+        ws.onmessage = function (event) {
+            const jsonData = JSON.parse(event.data);
+            console.log('Received message:', jsonData);
+            const messagesDiv = document.getElementById('messages');
+            messagesDiv.innerHTML = '<pre>' + JSON.stringify(jsonData, null, 2) + '</pre>';
+        };
+
+        ws.onclose = function (event) {
+            console.log('WebSocket connection closed.');
+        };
+
+        ws.onerror = function (event) {
+            console.error('WebSocket error:', event);
+        };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+.singlemessagesidebarmessageAreaMESSAGE {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+
+#singlemessageBarMessageName {
+    font-size: 15px;
+    font-weight: 700;
+    width: 100%;
+    margin-left: 120px;
+}
+
+
+#singlemessageBarMessageDetails {
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    margin-left: 120px;
+}
+
+
+.singlemessageSideBarMainContent .chat-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.message-text-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+.singlemessageSideBarMainContent textarea {
+    flex: 1;
+    font-size: 16px;
+    line-height: 20px;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    padding: 8px;
+    height: 40px;
+}
+
+.singlemessageSideBarMainContent button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #7357f3;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.singlemessageSideBarMainContent button:hover {
+    background-color: #0056b3;
+}
+
+.singlemessageSideBarMainContent button:focus {
+    outline: none;
+}
+
+.singlemessageSideBarMainContent {
+    height: 100%;
+}
+
+
+
+
+/*/////////////phone Section/////////////////*/
+
+
+@media (max-width: 575.98px) {
+
+    .messageSidebar {
+        height: 100%;
+    }
+
+}

@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CollabBizz</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/buttons.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/leftsidebar.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/rightsidebar.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/maxwidth575.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/messagesidebar.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/singlemessagesidebar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--custom js files-->
+    <script src="assets/js/customstyles.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/startup.js"></script>
+    <script src="assets/js/eventListnerTracker.js"></script>
+    <script src="assets/js/getNewpostsTimer.js"></script>
+    <script src="assets/js/dev-settings.js"></script>
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/reaction.js"></script>
+    <script src="assets/js/offSetPostRetrieve.js"></script>
+    <script src="assets/js/messages.js"></script>
+
+
+</head>
+
+<!--session expired box-->
+
+<div id="sessionexpiredbox" class="sessionexpiredbox">
+
+    <div class="sessionexpiredboxContent">
+
+        <sessionExpiredMainText>Session Expired</sessionExpiredMainText><br>
+
+        <sessionExpiredMmessageText>Please Login to continue</sessionExpiredMmessageText<br>
+
+            <button id="loginBtnId" class="sessionExpiredLoginButton"
+                onclick="sessionExpiredLoginButton()">Login</button>
+    </div>
+
+</div>
+
+<div id="centered-loading-div" class="centered-loading-div">
+
+    <div class="loader">
+    </div>
+
+
+</div>
+
+
+
+
+<!--switchable content-->
+
+
+<switchableContent>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="assets/img/logos/mainLogo.png" alt="CollabBizzLogo" class="logoImage">
+            <div class="userHeader">
+
+                <div class="userHeadernotifications">
+
+                    <button id="userpostimagecontainerbutton" class="bapsectionheaderbutton"
+                        onclick="rightSliderOpen()">
+                        <img id="headerBAPSectionButton" src="assets/img/icons/bap.png">
+                    </button>
+
+
+                    <button id="userpostimagecontainerbutton" onclick="messageBubbleOpenClose()">
+                        <img id="headerMessageButton" src="assets/img/icons/message.png">
+                    </button>
+
+
+                    <!--message Section starts-->
+                    <div class="userHeadermessagesSection" id="userHeadermessagesSection">
+                        <div class="messageSection">
+                            <div class="messageBubbleHeaderText">Messages</div>
+
+
+                            <a href="http://example.com">
+                                <div class="messageBubblemessage" id="message1"
+                                    style="background-color:rgba(161, 141, 246, 0.4);">
+                                    <div class="messageBubblesenderImage">
+                                        <img
+                                            src="https://cdn.pixabay.com/photo/2015/05/22/19/01/business-779542_960_720.jpg">
+                                    </div>
+
+                                    <div class="messageBubblesenderName">
+                                        <senderName>Marsh Golds and Jewellery</senderName>
+                                    </div>
+
+                                    <div class="messageBubblemessageText">
+                                        <messageText>Hello! Welcome to CollabBizz. We h..</messageText>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="http://example.com">
+                                <div class="messageBubblemessage" id="message2">
+                                    <div class="messageBubblesenderImage">
+                                        <img
+                                            src="https://png.pngtree.com/png-clipart/20190604/original/pngtree-creative-company-logo-png-image_1197025.jpg">
+                                    </div>
+
+                                    <div class="messageBubblesenderName">
+                                        <senderName>The boo Shoes and footwares </senderName>
+                                    </div>
+
+                                    <div class="messageBubblemessageText">
+                                        <messageText>Getting Interested in CollabBizz and..</messageText>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div onclick="openMessagesSection();" style="cursor: pointer;"
+                            class="messageBubbleAllmessagesText">
+                            All Messages >></div>
+                    </div>
+                    <!--message Section ends-->
+
+
+
+                    <button id="userpostimagecontainerbutton" onclick="notificationBubbleOpenClose()">
+
+                        <img id="headerNotificationButton" src="assets/img/icons/notification.png">
+                    </button>
+                    <!--notification Section starts-->
+                    <div class="userHeadernotificationSection" id="userHeadernotificationSection">
+                        <div class="notificationSection">
+                            <div class="notificationBubbleHeaderText">Notifications</div>
+
+
+                            <a href="http://example.com">
+                                <div class="notificationBubblemessage" id="notification1"
+                                    style="background-color:rgba(161, 141, 246, 0.4);">
+                                    <div class=" notificationBubblesenderImage">
+                                        <img src="assets/img/icons/interested.png">
+                                    </div>
+                                    <div class="notificationBubblemessageText">
+                                        <div class="notificationText">
+                                            <P>The boo Shoes and footwares is interested in your
+                                                post .. 2h</P>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="http://example.com">
+                                <div class="notificationBubblemessage" id="notification1"
+                                    style="background-color:   rgba(161, 141, 246, 0.4);">
+                                    <div class=" notificationBubblesenderImage">
+                                        <img src="assets/img/icons/share.png">
+                                    </div>
+                                    <div class="notificationBubblemessageText">
+                                        <div class="notificationText">Hanabi Firm shared your post .. 2h
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="http://example.com">
+                                <div class="notificationBubblemessage" id="notification1"
+                                    style="background-color:   rgba(161, 141, 246, 0.4);">
+                                    <div class=" notificationBubblesenderImage">
+                                        <img src="../logos/websiteLogo1.png">
+                                    </div>
+                                    <div class="notificationBubblemessageText">
+                                        <div class="notificationText">New CollabBizz Announcement ..2h
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+                            <a href="http://example.com">
+                                <div class="notificationBubblemessage" id="notification1">
+                                    <div class=" notificationBubblesenderImage">
+                                        <img src="assets/img/icons/interested.png">
+                                    </div>
+                                    <div class="notificationBubblemessageText">
+                                        <div class="notificationText">Mariana teasures is interested in your post ..2h
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+                        <a href="http://example.com">
+                            <div class="notificationBubbleAllmessagesText">All Notifications >></div>
+                        </a>
+                    </div>
+                    <!--notification Section ends-->
+
+
+
+                    <button id="userpostimagecontainerbutton" onclick="userLogoutBubbleOpenClose()">
+                        <img id="userpostimage"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqsUzyLG9wWSW3-dlPF1BhI_Kk-GDs1FcACg&usqp=CAU">
+                    </button>
+                </div>
+
+
+
+
+                <div class="userHeaderlogoutSection" id="userHeaderlogoutSectionId">
+                    <div class="logoutSection">
+                        <h2>Test Company</h2>
+
+                        <div class="logoutdiv">
+                            <button class="logoutdivbutton" id="logoutdivprofilebutton" onclick="leftSliderOpen()">
+                                <p>Profile</p>
+                            </button>
+                        </div>
+
+                        <div class="logoutdiv">
+                            <button class="logoutdivbutton" id="logoutdivsettingbutton" onclick="leftSliderOpen()">
+                                <p>Settings</p>
+                            </button>
+                        </div>
+
+                        <div class="logoutdiv">
+                            <button class="logoutdivbutton" id="logoutdivServicesbutton" onclick="viewcookies()">
+                                <p>Services
+                                </p>
+                            </button>
+                        </div>
+
+                        <div class="logoutdiv">
+                            <button class="logoutdivbutton" id="logoutdivlogoutbutton" onclick="logoutInit()">
+                                <p>Log Out</p>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+        </div>
+
+
+        <div class="sliderbuttons">
+
+            <div class="sliderbuttonsleft">
+                <button id="leftsliderRightbutton" onclick="leftSliderOpen()">
+                    <img id="leftsliderRightbuttonimg" src="assets/img/icons/rightButtonforLeftSlider.png"
+                        alt="leftsliderRightbuttonimg">
+                </button>
+            </div>
+
+        </div>
+
+
+        <!--Left Side Bar starts-->
+        <div id="leftSidebarId" class="leftSidebar">
+
+            <div class="leftsidebarclosebuttonarea" id="leftsidebarclosebuttonareaID">
+                <div class="leftsidebarclosebuttonclass">
+                    <button id="leftsliderclosebutton" onclick="leftSliderClose()">
+                        <img id="leftsliderclosebuttonimg" src="assets/img/icons/close.png"
+                            alt="leftsliderRightbuttonimg">
+                    </button>
+                </div>
+                <div class="leftsidebarServicesHeader" id="leftsidebarServicesHeaderid">
+                    <p id="serviceHeader">Your Services</p>
+                </div>
+            </div>
+
+            <div class="leftSideBarMainContent">
+
+
+                <div class="leftsidebarservicesArea">
+
+
+                    <!--service starts-->
+                    <div class="leftsidebarservicesAreaService" id="service1">
+
+                        <div class="serviceDetails" id="service1">
+
+                            <div class="serviceDetailsImage" id="serviceDetailsImageservice1">
+                                <img src="assets/img/icons/collabBizzChatBanner.png">
+                            </div>
+
+                            <div class="serviceDetailsStatus" id="serviceDetailsStatusservice1">
+                                <div class="activeNotActiveDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/greenRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <activeNotActiveText id="service1">Active</activeNotActiveText>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="runningNotRunningDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/greenRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <runningNotRunningText id="service1">Running</runningNotRunningText>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="serviceSettingsButton" id="serviceSettingsButtonServiceID">
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/servicesetting.png"></button>
+                                <servicesettingbuttonstext>Setting</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/disable.png"></button>
+                                <servicesettingbuttonstext>Disable</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/notification2.png"></button>
+                                <servicesettingbuttonstext>Notification</servicesettingbuttonstext>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--service ends !-->
+
+
+
+
+
+
+
+
+                    <!--service starts-->
+
+                    <div class="leftsidebarservicesAreaService" id="service2">
+
+                        <div class="serviceDetails" id="service2">
+
+                            <div class="serviceDetailsImage" id="serviceDetailsImageservice2">
+                                <img src="assets/img/icons/service2BANNER.png">
+                            </div>
+
+                            <div class="serviceDetailsStatus" id="serviceDetailsStatusservice1">
+                                <div class="activeNotActiveDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/greenRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <activeNotActiveText id="service1">Active</activeNotActiveText>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="runningNotRunningDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/redNotRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <runningNotRunningText id="service1">Not Running</runningNotRunningText>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="serviceSettingsButton" id="serviceSettingsButtonServiceID">
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/servicesetting.png"></button>
+                                <servicesettingbuttonstext>Setting</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/disable.png"></button>
+                                <servicesettingbuttonstext>Disable</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/notification2.png"></button>
+                                <servicesettingbuttonstext>Notification</servicesettingbuttonstext>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--service ends-->
+
+
+
+                    <!--service starts-->
+
+                    <div class="leftsidebarservicesAreaService" id="service2">
+
+                        <div class="serviceDetails" id="service2">
+
+                            <div class="serviceDetailsImage" id="serviceDetailsImageservice2">
+                                <img src="assets/img/icons/service2BANNER.png">
+                            </div>
+
+                            <div class="serviceDetailsStatus" id="serviceDetailsStatusservice1">
+                                <div class="activeNotActiveDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/greenRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <activeNotActiveText id="service1">Active</activeNotActiveText>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="runningNotRunningDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/redNotRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <runningNotRunningText id="service1">Not Running</runningNotRunningText>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="serviceSettingsButton" id="serviceSettingsButtonServiceID">
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/servicesetting.png"></button>
+                                <servicesettingbuttonstext>Setting</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/disable.png"></button>
+                                <servicesettingbuttonstext>Disable</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/notification2.png"></button>
+                                <servicesettingbuttonstext>Notification</servicesettingbuttonstext>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--service ends-->
+
+
+
+
+
+
+                    <!--service starts-->
+
+                    <div class="leftsidebarservicesAreaService" id="service2">
+
+                        <div class="serviceDetails" id="service2">
+
+                            <div class="serviceDetailsImage" id="serviceDetailsImageservice2">
+                                <img src="assets/img/icons/service2BANNER.png">
+                            </div>
+
+                            <div class="serviceDetailsStatus" id="serviceDetailsStatusservice1">
+                                <div class="activeNotActiveDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/greenRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <activeNotActiveText id="service1">Active</activeNotActiveText>
+                                    </div>
+
+
+
+                                </div>
+
+
+                                <div class="runningNotRunningDiv">
+
+                                    <div class="statusimages">
+                                        <img src="assets/img/icons/redNotRunning.png" class="servicesatusImage"
+                                            id="service1ActivestatusImage">
+                                    </div>
+
+                                    <div class="statusText">
+                                        <runningNotRunningText id="service1">Not Running</runningNotRunningText>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <div class="serviceSettingsButton" id="serviceSettingsButtonServiceID">
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/servicesetting.png"></button>
+                                <servicesettingbuttonstext>Setting</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/disable.png"></button>
+                                <servicesettingbuttonstext>Disable</servicesettingbuttonstext>
+
+                                <button class="serviceSettingsButtonButton"><img class="serviceSettingsButtonImage"
+                                        src="assets/img/icons/notification2.png"></button>
+                                <servicesettingbuttonstext>Notification</servicesettingbuttonstext>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--service ends-->
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--Left Side Bar Ends-->
+
+
+
+        <!--Right Side Bar starts-->
+
+
+        <div id="rightSidebarId" class="rightSidebar">
+
+            <div class="rightSidebarclosebuttonarea">
+                <div class="rightSidebarclosebuttonclass">
+                    <button id="rightsliderclosebutton" onclick="rightSliderClose()">
+                        <img id="rightsliderclosebuttonimg" src="assets/img/icons/close.png"
+                            alt="rightSidebarbuttonimg">
+                    </button>
+                </div>
+            </div>
+            <div class="rightSideBarMainContent">
+
+
+                <div class="rightsidebarServicesHeader">
+                    <p id="bapHeader">BAPs</p>
+                </div>
+
+
+                <div class="rightsidebarbapArea">
+
+                    <!--bap friend each section starts-->
+
+                    <bapString id="BAPPage"></bapString>
+
+                    <!--bap friend each section ends-->
+
+
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <!--Right Side Bar Ends-->
+
+
+        <!--Message Side Bar starts-->
+        <div id="messageSidebarId" class="messageSidebar">
+
+            <div class="messageSidebarclosebuttonarea">
+                <div class="messageSidebarclosebuttonclass">
+                    <button id="messagesliderclosebutton" onclick="messageSliderClose()">
+                        <img id="messagesliderclosebuttonimg" src="assets/img/icons/close.png"
+                            alt="messageSidebarbuttonimg">
+                    </button>
+                </div>
+            </div>
+            <div class="messageSideBarMainContent">
+
+
+                <div class="messagesidebarServicesHeader">
+                    <p id="messageHeader">Messages</p>
+                </div>
+
+
+                <div class="messagesidebarmessageArea">
+
+                    <!--message each section starts-->
+
+                    <div onclick="alert('hello');" style="cursor: pointer;" class="message">
+                        <img class="message-user-picture"
+                            src="https://cdn.pixabay.com/photo/2015/05/22/19/01/business-779542_960_720.jpg"
+                            alt="User Picture">
+                        <div class="message-user-info">
+                            <h3 class="message-user-name">John Doe</h3>
+                            <p class="message-user-message ">Hello, how are you doing?</p>
+                        </div>
+                    </div>
+
+                    <!--message each section ends-->
+
+                    <!--message each section starts-->
+
+                    <div onclick="alert('hello');" style="cursor: pointer;" class="message">
+                        <img class="message-user-picture"
+                            src="https://cdn.pixabay.com/photo/2015/05/22/19/01/business-779542_960_720.jpg"
+                            alt="User Picture">
+                        <div class="message-user-info">
+                            <h3 class="message-user-name">John Doe</h3>
+                            <p class="message-user-message ">Hello, how are you doing?</p>
+                        </div>
+                    </div>
+
+                    <!--message each section ends-->
+
+                </div>
+            </div>
+
+
+        </div>
+        <!--Message Side BarEnds-->
+
+
+        <!--Single Message Side Bar starts-->
+        <div id="singlemessageSidebarId" class="singlemessageSidebar">
+
+            <div class="singlemessageSidebarclosebuttonarea">
+                <div class="singlemessageSidebarclosebuttonclass">
+                    <button id="singlemessagesliderclosebutton" onclick="messageSliderClose()">
+                        <img id="singlemessagesliderclosebuttonimg" src="assets/img/icons/close.png"
+                            alt="singlemessageSidebarbuttonimg">
+                    </button>
+                </div>
+            </div>
+            <div class="singlemessageSideBarMainContent">
+
+
+                <div class="singlemessagesidebarServicesHeader">
+                    <p id="singlemessageHeader">Message</p>
+                </div>
+
+
+                <div class="singlemessagesidebarmessageArea">
+                    Hello
+                    <div class="chat-input">
+                        <div class="message-text-box">
+                            <textarea id="messageInput" placeholder="Type your message..."
+                                oninput="adjustTextAreaHeight()" onkeypress="handleKeyPress(event)"></textarea>
+                        </div>
+                        <button id="sendButton" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--Single Message Side BarEnds-->
+
+    </header>
+
+    <body>
+
+        <div class="container-fluid p-5">
+            <div class="row">
+                <div class="col-md-12" id="mainscrollable">
+
+                    <div class="usernewPostsection">
+
+                        <div class="usernewpostsectioninside">
+                            <div class="usernewpostsectionuserimage">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqsUzyLG9wWSW3-dlPF1BhI_Kk-GDs1FcACg&usqp=CAU"
+                                    id="userpostimage">
+                            </div>
+
+                            <div class="usernewpostsectioncreativeoptions">
+                                <button class="usersectioncreatebutton" role="button">New View</button><br>
+                            </div>
+
+                            <div class="usernewpostsectioncreateoptions">
+
+
+                            </div>
+                        </div>
+                        <div class="userpostpanelquickoptions">
+                            <userquickIcon><img id="userpostpanelquickoptionsreactionIcons"
+                                    src="assets/img/icons/AI.png">
+                                <userquickIconText>AI Creation</userquickIconText>
+                            </userquickIcon>
+                            <userquickIcon><img id="userpostpanelquickoptionsreactionIcons"
+                                    src="assets/img/icons/ads.png">
+                                <userquickIconText>Ad Campaign</userquickIconText>
+                            </userquickIcon>
+                            <userquickIcon><img id="userpostpanelquickoptionsreactionIcons"
+                                    src="assets/img/icons/create.png">
+                                <userquickIconText>Create</userquickIconText>
+                            </userquickIcon>
+                        </div>
+                    </div>
+
+
+                    <!--post starts                      -->
+                    <div class="mainpostArea">
+                        <postString id="IndexPagePosts"></postString>
+                    </div>
+
+
+                    <!--posts end                        -->
+
+
+                    <!--offset loader starts-->
+
+                    <div id="offSetPosts-loading-div" class="offSetPosts-loading-div">
+
+                        <div class="offsetPostloader">
+                        </div>
+
+
+                    </div>
+
+                    <!--offset loader ends-->
+
+
+                    Width: <span id="width"></span><br>
+                    Height <span id="height"></span>
+
+
+                    <script>
+                        var w = window.innerWidth;
+                        var h = window.innerHeight;
+
+                        $(window).resize(function () {
+                            $("#width").text($(this).width());
+                            $("#height").text($(this).height());
+                        });
+
+
+                    </script>
+
+
+                </div>
+            </div>
+        </div>
+
+</switchableContent>
+
+</body>
+
+</html>
